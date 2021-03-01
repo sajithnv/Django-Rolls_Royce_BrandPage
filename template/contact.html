@@ -1,0 +1,42 @@
+{%include 'main.html'%}
+{%block content%}
+<head>
+	<title>contact</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+	 .foot1{
+      margin-left: 1100px;
+    }
+    .foot2{
+      margin-left: 50px;
+    }
+    h1{
+    	margin-left: 40%;
+    	color: crimson;
+    }
+    a{
+    	text-decoration: none;
+    	color:black;
+    }
+	</style>
+
+</head>
+<body style="background-color: lightblue;">
+<h1>Contact Page</h1>
+<hr>
+<div style="margin-left: 37%; margin-top: 2%;">
+	<h4><i class="fa fa-suitcase"></i>&nbsp&nbspBrand Name: RollsRoyce</h4>
+	<h4><i class='fa fa-phone'></i>&nbsp&nbspphone number: +44(0)1234 384300</h4>
+	<h4><a target='_blank'href="https://www.rolls-roycemotorcars.com/en_GB/home.html">Official Website </a></h4>
+	<h4><a target='_blank'href="mailto:customer.relations@rolls-roycemotorcars.com" jsname="YheIzf" class="rABsFf RffVmb AL18ce" target="_blank" jslog="35051; track:click,impression" data-tooltip="" data-tooltip-position="top">E-mail</a></h4>
+</div>
+</body>
+<footer style="margin-top: 27%;"> 
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+       <a class="navbar-brand foot1" href='{% url "help2"%}'>HELP</a>
+       <a class="navbar-brand foot2" href="{% url 'contact2'%}">CONTACT</a>
+   </nav>   
+  </div>
+</footer> 
+{%endblock%}

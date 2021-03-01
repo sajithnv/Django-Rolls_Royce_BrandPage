@@ -1,0 +1,63 @@
+{%include 'main.html'%}
+<head>
+	<title>New Homepg</title>
+	<style type="text/css">
+		.a{
+			font-size: 25px;
+			font-family: serif;
+			color:red;
+			background-image:radial-gradient(yellow,white,pink);
+		}
+    body {
+      background-image:radial-gradient(pink,white,red);
+    }
+    .abc{
+      display: none;
+    }
+    .foot1{
+      margin-left: 1100px;
+    }
+    .foot2{
+      margin-left: 50px;
+    }
+	</style>
+ </head> 
+<body>
+	<hr>
+		<marquee direction='right'class='a'>ROLLS ROYCE PHANTOM</marquee>
+	
+    <div>
+      <img  class="abc"src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2021-rolls-royce-phantom-mmp-1-1608156397.jpg?crop=1.00xw:0.564xh;0,0.207xh&resize=1200:*" width="100%" alt="ROLLS ROYCE">
+      <img class="abc"src="https://s.aolcdn.com/dims-global/dims3/GLOB/legacy_thumbnail/640x400/quality/80/https://s.aolcdn.com/commerce/autodata/images/USC80RRC041A01300.jpg" width="100%">
+      <img class="abc"src="https://i0.wp.com/www.cars24.com/blog/wp-content/uploads/2019/10/phantom.jpg" width="100%" alt="ROLLS ROYCE">
+    </div>
+<script>
+  var index=0;
+  slider();
+  function slider()
+  {
+    var i;
+    var x=document.getElementsByClassName("abc");
+   
+    for(i=0; i < x.length; i++)
+    {
+      x[i].style.display='none';
+    }
+    index++;
+    if (index > x.length)
+    {
+      index=1;
+    }
+    x[index-1].style.display='block';
+    setTimeout(slider,3000);
+  }
+</script>
+</body>
+ <footer> 
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+       <a class="navbar-brand foot1" href='{% url "help2"%}'>HELP</a>
+       <a class="navbar-brand foot2" href="{% url 'contact2'%}">CONTACT</a>
+   </nav>   
+  </div>
+</footer> 

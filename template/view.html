@@ -1,0 +1,53 @@
+{%include 'main.html'%}
+{%block content%}
+<head>
+	<style type="text/css">
+		body {
+			background-image:radial-gradient(pink,white,red);
+		}
+		table{
+			margin-top: 5%;
+			margin-left: 30%;
+			width: 45%;
+			height: 250px;
+			border:solid 10px steelblue;
+		}
+		tr{
+			border:solid 5px gray;
+		}
+		th{
+			text-align: center;
+			font-size: 30px;
+			color: crimson;
+		}
+		td{
+			padding-left: 20px;
+		}
+		footer{
+			margin-top: 15%;
+		}
+		.foot1{
+      	    margin-left: 1100px;
+        }
+        .foot2{
+             margin-left: 50px;
+        }
+	</style>
+</head>
+<table>
+	<thead><tr><th>Title</th></tr></thead>
+	<tbody>
+	{%for t in data%}
+	<tr><td>{{t.title}}</td></tr>
+	{%endfor%}
+	</tbody>
+</table>	
+<footer> 
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+       <a class="navbar-brand foot1" href='{% url "help2"%}'>HELP</a>
+       <a class="navbar-brand foot2" href="{% url 'contact2'%}">CONTACT</a>
+   </nav>   
+  </div>
+</footer> 
+{%endblock%}

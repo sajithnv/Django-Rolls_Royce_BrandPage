@@ -1,0 +1,29 @@
+{%include 'main.html'%}
+{%block content%}
+<head>
+	<title>help</title>
+	<style type="text/css">
+	.foot1{
+      margin-left: 1100px;
+    }
+    .foot2{
+      margin-left: 50px;
+    }
+    h1{
+    	margin-left: 40%;
+    	color: crimson;
+    }
+	</style>
+</head>
+<body style="background-color: lightblue;">
+<h1>Help page</h1>
+<hr>
+<footer style="margin-top: 39%"> 
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+       <a class="navbar-brand foot1" href='{% url "help2"%}'>HELP</a>
+       <a class="navbar-brand foot2" href="{% url 'contact2'%}">CONTACT</a>
+   </nav>   
+  </div>
+</footer> 
+{%endblock%}
