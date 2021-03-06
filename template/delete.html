@@ -1,0 +1,47 @@
+{%include 'main.html'%}
+{%block content%}
+<head>
+	<style type="text/css">
+		.image{
+			width: 100%;
+			opacity: 0.4;
+		}
+		.title{
+			color: white;
+			left: 0;
+			right: 0;
+			width: 40%;
+			transform: translate(60%,-720px);
+		}
+		.foot1{
+      	    margin-left: 1100px;
+        }
+        .foot2{
+             margin-left: 50px;
+        }
+        ol{
+        	padding-left: 2%;
+        }
+	</style>
+</head>
+<body style="background-color: black;">
+	<img  class='image'src="https://wallpaperaccess.com/full/1893200.jpg">
+	<div class="title">
+		<h1><u><b><i style="color:crimson;padding-left: 40%;">TITLE</i></b></u></h1>
+		<ol>
+		{%for s in data%}
+		<li>{{s.title}}&nbsp&nbsp<a style="margin-left: 10%;text-decoration: none;" href="{% url 'tododelete1' s.id%}">DELETE_TITLE</a></li>
+		<hr>
+		{%endfor%}
+		</ol>
+    </div>
+</body>
+<footer> 
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+       <a class="navbar-brand foot1" href='{% url "help2"%}'>HELP</a>
+       <a class="navbar-brand foot2" href="{% url 'contact2'%}">CONTACT</a>
+   </nav>   
+  </div>
+</footer> 
+{%endblock%}

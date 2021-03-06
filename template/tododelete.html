@@ -1,0 +1,40 @@
+{%include 'main.html'%}
+{%block content%}
+<head>
+	<style type="text/css">
+		.image{
+			width: 100%;
+			opacity: 0.4;
+		}
+		.foot1{
+      	    margin-left: 1100px;
+        }
+        .foot2{
+             margin-left: 50px;
+        }
+        ol{
+        	padding-left: 2%;
+        }
+        form{
+        	transform: translate(30%,-600px);
+        }
+	</style>
+</head>
+<body style="background-color: black;">
+	<img  class='image'src="https://wallpaperaccess.com/full/1893200.jpg">
+	<form method="POST">
+		{%csrf_token%}
+		<h4 style="color: red;">Are You Sure To delete : ' {{form.title}} '</h4>
+		<input type="submit" name="yes">
+        <a href="{%url 'delete1'%}"><input type="button" value="cancel" ></a>		
+	</form>
+</body>
+<footer> 
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+       <a class="navbar-brand foot1" href='{% url "help2"%}'>HELP</a>
+       <a class="navbar-brand foot2" href="{% url 'contact2'%}">CONTACT</a>
+   </nav>   
+  </div>
+</footer> 
+{%endblock%}

@@ -22,6 +22,6 @@ from newapp1.views import f2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^main_project/',include('newapp1.urls')),
+    url(r'^',include('newapp1.urls')),
     url(r'^$',f2,name='home'),
 ]
