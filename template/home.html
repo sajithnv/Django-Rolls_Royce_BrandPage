@@ -1,5 +1,6 @@
 {%include 'main.html'%}
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>New Homepg</title>
 	<style type="text/css">
 		.a{
@@ -13,12 +14,18 @@
     }
     .abc{
       display: none;
+      background-color: black;
     }
     .foot1{
-      margin-left: 1100px;
+      margin-left: 1000px;
     }
     .foot2{
       margin-left: 50px;
+    }
+    .nav-icon-style{
+      font-size: 30px;
+      text-decoration: none;
+      color:white;
     }
 	</style>
  </head> 
@@ -28,8 +35,8 @@
 	
     <div>
       <img  class="abc"src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2021-rolls-royce-phantom-mmp-1-1608156397.jpg?crop=1.00xw:0.564xh;0,0.207xh&resize=1200:*" width="100%" alt="ROLLS ROYCE" height="800">
-      <img class="abc"src="https://s.aolcdn.com/dims-global/dims3/GLOB/legacy_thumbnail/640x400/quality/80/https://s.aolcdn.com/commerce/autodata/images/USC80RRC041A01300.jpg" width="100%" height="800;" alt="ROLLS ROYCE">
-      <img class="abc"src="https://i0.wp.com/www.cars24.com/blog/wp-content/uploads/2019/10/phantom.jpg" width="100%"height="800;" alt="ROLLS ROYCE">
+      <img class="abc"src=https://www.wallpapertip.com/wmimgs/0-3181_2019-rolls-royce-wraith-msrp.jpg width="100%" height="800;" alt="ROLLS ROYCE">
+      <img class="abc"src=https://i.pinimg.com/originals/d6/b5/85/d6b5853da664992e42125b81a81f46ca.jpg width="100%"height="800;" alt="ROLLS ROYCE">
     </div>
 <script>
   var index=0;
@@ -52,10 +59,14 @@
     setTimeout(slider,3000);
   }
 </script>
+
 </body>
  <footer> 
   <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+      &nbsp&nbsp<a href="" class="fa fa-instagram nav-icon-style"></a>&nbsp&nbsp
+      <a href="" class="fa fa-youtube nav-icon-style"></a>&nbsp&nbsp
+      <a href="https/www.instagram.com" class="fa fa-wikipedia-w nav-icon-style"></a>
        <a class="navbar-brand foot1" href='{% url "help2"%}'>HELP</a>
        <a class="navbar-brand foot2" href="{% url 'contact2'%}">CONTACT</a>
    </nav>   
