@@ -15,17 +15,56 @@
     .abc{
       display: none;
       background-color: black;
+      border:10px solid gray;
     }
     .foot1{
       margin-left: 1000px;
     }
+   /* .foot1:hover{
+      color: yellow;
+    }*/
     .foot2{
       margin-left: 50px;
     }
+   /* .foot2:hover{
+      color: yellow;
+    }*/
     .nav-icon-style{
       font-size: 30px;
       text-decoration: none;
+      color:black;
+    }
+    .nav-icon-style:hover{
+      color: red;
+    }
+    .card-div{
+      height: 600px;
+      padding: 1%;
+      margin: 1%;
+      border:2px solid black;
+      width: 70%;
+      background-color: crimson;
+      color: white;
+    }
+    .marquee{
+      width: 25%;
+      margin-top: 30px;
+      margin-bottom: 6px;
+      border-radius: 10px;
+      border:2px solid black;
       color:white;
+      background-image: url(https://images.unsplash.com/photo-1541239370886-851049f91487?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+    }
+      p,h5{
+        text-align: center;
+    }
+    mark{
+      background-color:black;
+      border:2px solid white;
+    }
+    a{
+      text-decoration: none;
+      color: white;
     }
 	</style>
  </head> 
@@ -38,6 +77,41 @@
       <img class="abc"src=https://www.wallpapertip.com/wmimgs/0-3181_2019-rolls-royce-wraith-msrp.jpg width="100%" height="800;" alt="ROLLS ROYCE">
       <img class="abc"src=https://i.pinimg.com/originals/d6/b5/85/d6b5853da664992e42125b81a81f46ca.jpg width="100%"height="800;" alt="ROLLS ROYCE">
     </div>
+ <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col"style="margin-right: -200px;">
+    <div class="card card-div">
+      <img src="https://images.barrons.com/im-227394?width=620&size=1.5005861664712778" class="card-img-top" alt="ROLLS_ROYCE">
+      <div class="card-body">
+        <h5 class="card-title">MISSION</h5>
+        <p class="card-text">Is to deliver ‘better power for a changing world’. We create power. Our core business is the gas turbine and this is used to power aircraft, ships and electrical generators.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col "style="margin-right: -180px;">
+    <div class="card card-div">
+      <img src="https://img.gaadicdn.com/images/carexteriorimages/930x620/Rolls-Royce/Rolls-Royce-Phantom/7784/1587205684825/rear-left-view-121.jpg" class="card-img-top" alt="ROLLS_ROYCE">
+      <div class="card-body">
+        <h5 class="card-title">VISION</h5>
+        <p class="card-text">Inspiring Greatness. For over 100 years, Rolls-Royce Motor Cars has pushed the boundaries of luxury, creating new realities both within and beyond automotive design.Explore our vision.</p>
+      </div>
+    </div>
+  </div>
+<marquee onMouseOver='this.stop()' onMouseOut='this.start()' scrollamount='10' class='marquee'direction='up'>
+  <h1><u style="color: blue"><i style="color: crimson;">OUR MODELS</i></u></h1>
+  <ul>
+    <li><mark><a  target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Rolls-Royce_Ghost_%28MSP16%29.jpg/1200px-Rolls-Royce_Ghost_%28MSP16%29.jpg">2020 - Ghost</a></mark></li>
+    <li><a target="_blank" href="https://imgctcf.aeplcdn.com/thumbs/p-nc-b-ver201911141250/images/car-data/big/rolls-royce-cullinan-14589.jpg">2018 - Cullinan</a></li>
+    <li><a target="_blank" href="https://static.cargurus.com/images/article/2017/01/12/18/07/2017_rolls-royce_phantom_coupe_preview_overview-pic-3076741100791501500-640x480.jpeg">2017 - Phantom</a></li>
+    <li><a target="_blank" href="https://static.designboom.com/wp-content/uploads/2017/05/rolls-royce-sweptail-designboom-header.jpg">2017 - Sweptail (one-off)</a></li>
+    <li><a target="_blank" href="https://www.millermotorcars.com/imagetag/3658/main/l/Used-2016-Rolls-Royce-Dawn.jpg">2016 - Dawn</a></li>
+    <li><a target="_blank" href="https://www.wardsauto.com/sites/wardsauto.com/files/styles/article_featured_retina/public/uploads/2013/11/2014-rolls-wraith-front.jpg?itok=d6Q39bsJ">2013 - Wraith</a></li>
+    <li><a target="_blank" href="https://www.topcarrating.com/rolls-royce/2009-rolls-royce-ghost.jpg">2010 - Ghost</a></li>
+    <li><a target="_blank" href="https://www.newcartestdrive.com/wp-content/uploads/2007/07/08-phantom-hero.jpg">2008–16 - Phantom Coupé</a></li>
+    <li><a target="_blank" href="https://images1.bonhams.com/image?src=Images/live/2017-02/16/94617602-2-2.jpg&top=0.383084577114&left=0.156666666666&bottom=0.875621890547&right=0.866666666666&width=640&height=480&autosizefit=1">2007–16 - Phantom Drophead Coupé</a></li>
+    <li><a target="_blank" href="https://www.netcarshow.com/Rolls-Royce-Phantom-2003-1600-11.jpg">2003–17 - Phantom</a></li>
+  </ul>
+</marquee>
+</div>
 <script>
   var index=0;
   slider();
@@ -64,9 +138,9 @@
  <footer> 
   <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
-      &nbsp&nbsp<a href="" class="fa fa-instagram nav-icon-style"></a>&nbsp&nbsp
-      <a href="" class="fa fa-youtube nav-icon-style"></a>&nbsp&nbsp
-      <a href="https/www.instagram.com" class="fa fa-wikipedia-w nav-icon-style"></a>
+      &nbsp&nbsp<a href="https://www.instagram.com/"target='_blank' class="fa fa-instagram nav-icon-style"></a>&nbsp&nbsp
+      <a href="https://www.youtube.com/"target='_blank' class="fa fa-youtube nav-icon-style"></a>&nbsp&nbsp
+      <a href="https://en.wikipedia.org/wiki/Wikipedia" target='_blank'class="fa fa-wikipedia-w nav-icon-style"></a>
        <a class="navbar-brand foot1" href='{% url "help2"%}'>HELP</a>
        <a class="navbar-brand foot2" href="{% url 'contact2'%}">CONTACT</a>
    </nav>   

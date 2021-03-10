@@ -1,22 +1,32 @@
 {%include 'main.html'%}
 {%block content%}
 <head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
 		.image{
 			width: 100%;
 			opacity: 0.4;
+			margin-bottom: -70px;
 		}
 		.foot1{
-      	    margin-left: 1100px;
+      	    margin-left: 1000px;
         }
         .foot2{
              margin-left: 50px;
         }
+        .nav-icon-style{
+     		font-size: 30px;
+     	 	text-decoration: none;
+     		 color:black;
+    	}
+    	.nav-icon-style:hover{
+     		 color: red;
+	     }	 
         ol{
         	padding-left: 2%;
         }
         form{
-        	transform: translate(30%,-600px);
+        	transform: translate(30%,-430px);
         }
 	</style>
 </head>
@@ -29,9 +39,12 @@
         <a href="{%url 'delete1'%}"><input type="button" value="cancel" ></a>		
 	</form>
 </body>
-<footer> 
+ <footer> 
   <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+      &nbsp&nbsp<a href="https://www.instagram.com/"target='_blank' class="fa fa-instagram nav-icon-style"></a>&nbsp&nbsp
+      <a href="https://www.youtube.com/"target='_blank' class="fa fa-youtube nav-icon-style"></a>&nbsp&nbsp
+      <a href="https://en.wikipedia.org/wiki/Wikipedia" target='_blank'class="fa fa-wikipedia-w nav-icon-style"></a>
        <a class="navbar-brand foot1" href='{% url "help2"%}'>HELP</a>
        <a class="navbar-brand foot2" href="{% url 'contact2'%}">CONTACT</a>
    </nav>   

@@ -1,20 +1,30 @@
 {%include 'main.html'%}
 {%block content%}
 <head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>help</title>
 	<style type="text/css">
 	.foot1{
-      margin-left: 1100px;
+      margin-left: 1000px;
     }
     .foot2{
       margin-left: 50px;
     }
+    .nav-icon-style{
+     	font-size: 30px;
+      	text-decoration: none;
+   		color:black;
+    }
+    .nav-icon-style:hover{
+     	 color: red;
+	}	 
     h1{
     	margin-left: 40%;
     	color: crimson;
     }
     .image{
     	opacity: 0.4;
+    	margin-bottom: -60px;
     }
     body{
     	background-color: black;
@@ -24,11 +34,13 @@
 <body>
 	<img class="image" src="https://wallpaperaccess.com/full/1893200.jpg"width='100%'>
 
-<h1 style="transform: translate(5%,-700px);"><u style="color: white;">Help page</u></h1>
-<hr>
-<footer> 
+<h1 style="transform: translate(5%,-600px);"><u style="color: white;">Help page</u></h1>
+ <footer> 
   <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+      &nbsp&nbsp<a href="https://www.instagram.com/"target='_blank' class="fa fa-instagram nav-icon-style"></a>&nbsp&nbsp
+      <a href="https://www.youtube.com/"target='_blank' class="fa fa-youtube nav-icon-style"></a>&nbsp&nbsp
+      <a href="https://en.wikipedia.org/wiki/Wikipedia" target='_blank'class="fa fa-wikipedia-w nav-icon-style"></a>
        <a class="navbar-brand foot1" href='{% url "help2"%}'>HELP</a>
        <a class="navbar-brand foot2" href="{% url 'contact2'%}">CONTACT</a>
    </nav>   

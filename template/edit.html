@@ -1,20 +1,30 @@
 {%include 'main.html'%}
 {%block content%}
 <head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
 		.image{
 			width: 100%;
 			opacity: 0.4;
+			margin-bottom: -460px;
 		}
 		.title{
 			color: white;
 			left: 0;
 			right: 0;
 			width: 40%;
-			transform: translate(60%,-720px);
+			transform: translate(60%,-270px);
 		}
+		.nav-icon-style{
+     		font-size: 30px;
+     	 	text-decoration: none;
+     		 color:black;
+    	}
+    	.nav-icon-style:hover{
+     		 color: red;
+	     }	 
 		.foot1{
-      	    margin-left: 1100px;
+      	    margin-left: 1000px;
         }
         .foot2{
              margin-left: 50px;
@@ -36,9 +46,12 @@
 		</ol>
     </div>
 </body>
-<footer> 
+ <footer> 
   <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+      &nbsp&nbsp<a href="https://www.instagram.com/"target='_blank' class="fa fa-instagram nav-icon-style"></a>&nbsp&nbsp
+      <a href="https://www.youtube.com/"target='_blank' class="fa fa-youtube nav-icon-style"></a>&nbsp&nbsp
+      <a href="https://en.wikipedia.org/wiki/Wikipedia" target='_blank'class="fa fa-wikipedia-w nav-icon-style"></a>
        <a class="navbar-brand foot1" href='{% url "help2"%}'>HELP</a>
        <a class="navbar-brand foot2" href="{% url 'contact2'%}">CONTACT</a>
    </nav>   

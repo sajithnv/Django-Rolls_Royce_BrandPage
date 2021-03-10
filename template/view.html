@@ -1,15 +1,17 @@
 {%include 'main.html'%}
 {%block content%}
 <head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
 		.image{
 			width: 100%;
 			opacity: 0.4;
+			margin-bottom: -400px;
 		}
 		table{
 			left: 0;
 			right: 0;
-			transform: translate(-60px,-780px);
+			transform: translate(-60px,-370px);
 			margin-top: 5%;
 			margin-left: 30%;
 			width: 45%;
@@ -17,6 +19,14 @@
 			border: 10px solid gray;
 			opacity: 0.8;
 		}
+		.nav-icon-style{
+     		font-size: 30px;
+     	 	text-decoration: none;
+     		 color:black;
+    	}
+    	.nav-icon-style:hover{
+     		 color: red;
+	     }	 
 		th{
 			border: 5px solid gray;
 			text-align: center;
@@ -28,7 +38,7 @@
 			font-size: 20px;
 		}
 		.foot1{
-      	    margin-left: 1100px;
+      	    margin-left: 1000px;
         }
         .foot2{
              margin-left: 50px;
@@ -36,18 +46,28 @@
         .button{
         	left:0;
         	top:0;
-        	transform: translate(485px,-735px);
-        	width: 150px;
+        	transform: translate(345px,-325px);
+        	width: 290px;
         	background-color: crimson;
         	border:solid 5px gray;
         }
         .button1{
         	left:0;
         	top:0;
-        	transform: translate(505px,-735px);
-        	width: 150px;
+        	transform: translate(368px,-325px);
+        	width: 290px;
         	background-color: crimson;
         	border:solid 5px gray;
+        }
+        .button:hover{
+        	border:solid 5px white;
+        	color: white;
+        	background-color: black;
+        }
+        .button1:hover{
+        	border:solid 5px white;
+        	color:white;
+        	background-color: black;
         }
         .footeralign{
         	margin-top:-390px;
@@ -67,9 +87,12 @@
 	</tbody>
 </table>	
 </body>
-<footer> 
-  <div class="footeralign">
+ <footer> 
+  <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+      &nbsp&nbsp<a href="https://www.instagram.com/"target='_blank' class="fa fa-instagram nav-icon-style"></a>&nbsp&nbsp
+      <a href="https://www.youtube.com/"target='_blank' class="fa fa-youtube nav-icon-style"></a>&nbsp&nbsp
+      <a href="https://en.wikipedia.org/wiki/Wikipedia" target='_blank'class="fa fa-wikipedia-w nav-icon-style"></a>
        <a class="navbar-brand foot1" href='{% url "help2"%}'>HELP</a>
        <a class="navbar-brand foot2" href="{% url 'contact2'%}">CONTACT</a>
    </nav>   
