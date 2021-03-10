@@ -41,3 +41,5 @@ def tododelete(request,pk):
         todoinstance.delete()
         return redirect('view')
     return render(request,'tododelete.html',{'form': todoinstance})
+def gallery(request):
+    return render(request,'gallery.html')

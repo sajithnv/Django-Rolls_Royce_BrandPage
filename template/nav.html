@@ -5,29 +5,34 @@
       background-image:radial-gradient(#6555e2,#bd8282,#250ee6);
     }
     .align_add{
-      margin-left: -850px;
+      margin-left: -830px;
       /*margin-right: 10px;*/
     }
     .align_view{
-      margin-left: -850px;
+      margin-left: -830px;
       /*margin-right: 10px;*/
     }
+    .align_gallery{
+      margin-left: -830px;
+    } 
     .logo:hover{
       border: 3px solid red;
     }
+   
   </style>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 	<div class="divabc">
 	<nav class="navbar navbar-expand-lg navbar-light bg-light nav">
       <div class="container-fluid">
-       <a class="navbar-brand " href="{%url 'home'%}">HOME</a>
+       <a class="navbar-brand " href="{%url 'home'%}">Home</a>
         <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button> -->
     
-        <a class="navbar-brand align_add" href="{%url 'todoadd'%}">ADD NEW</a>
-        <a class="navbar-brand align_view" href="{%url 'view'%}">VIEW DETAILS</a>
+        <a class="navbar-brand align_add" href="{%url 'todoadd'%}">Add_New</a>
+        <a class="navbar-brand align_view" href="{%url 'view'%}">View_Details</a>
+        <a class="navbar-brand align_gallery" href="{%url 'gallery1'%}">Gallery</a>
     <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
