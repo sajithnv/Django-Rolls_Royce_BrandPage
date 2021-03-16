@@ -4,23 +4,9 @@
 	<title>contact</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
-	 .foot1{
-      margin-left: 1000px;
-    }
-    .foot2{
-      margin-left: 50px;
-    }
     h1{
     	color: crimson;
     }
-    .nav-icon-style{
-     	font-size: 30px;
-      	text-decoration: none;
-   		color:black;
-    }
-   	.nav-icon-style:hover{
-   	  	color: red;
-	}	 
     a{
     	text-decoration: none;
     	color:gray;
@@ -69,15 +55,5 @@
 	<h1 style="text-align: center;">Location</h1>
 	<iframe style='margin-left: 25%;margin-top: 1%;'width="50%" height="400" frameborder="5" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=rolls%20ryce,kings%20place,90%20york%20way,london,n1%209fx,england+(Rolls-Royce)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.mapsdirections.info/en/measure-map-radius/"></a></div>
 </body>
- <footer> 
-  <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
-      &nbsp&nbsp<a href="https://www.instagram.com/"target='_blank' class="fa fa-instagram nav-icon-style"></a>&nbsp&nbsp
-      <a href="https://www.youtube.com/"target='_blank' class="fa fa-youtube nav-icon-style"></a>&nbsp&nbsp
-      <a href="https://en.wikipedia.org/wiki/Wikipedia" target='_blank'class="fa fa-wikipedia-w nav-icon-style"></a>
-       <a class="navbar-brand foot1" href='{% url "help2"%}'>HELP</a>
-       <a class="navbar-brand foot2" href="{% url 'contact2'%}">CONTACT</a>
-   </nav>   
-  </div>
-</footer> 
+{%include 'footer.html'%}
 {%endblock%}

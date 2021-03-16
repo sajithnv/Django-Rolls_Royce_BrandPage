@@ -8,46 +8,23 @@
 			opacity: 0.4;
 			margin-bottom: -70px;
 		}
-		.foot1{
-      	    margin-left: 1000px;
-        }
-        .foot2{
-             margin-left: 50px;
-        }
-        .nav-icon-style{
-     		font-size: 30px;
-     	 	text-decoration: none;
-     		 color:black;
-    	}
-    	.nav-icon-style:hover{
-     		 color: red;
-	     }	 
-        ol{
-        	padding-left: 2%;
-        }
-        form{
-        	transform: translate(30%,-430px);
-        }
+    ol{
+      padding-left: 2%;
+    }
+    form{
+    	transform: translate(30%,-430px);
+    }
 	</style>
 </head>
 <body style="background-color: black;">
 	<img  class='image'src="https://wallpaperaccess.com/full/1893200.jpg">
 	<form method="POST">
 		{%csrf_token%}
-		<h4 style="color: red;">Are You Sure To delete : ' {{form.title}} '</h4>
+
+		<h4 style="color: red;">Are You Sure To delete : ' {{form1.title}} '</h4>
 		<input type="submit" name="yes">
         <a href="{%url 'delete1'%}"><input type="button" value="cancel" ></a>		
 	</form>
 </body>
- <footer> 
-  <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
-      &nbsp&nbsp<a href="https://www.instagram.com/"target='_blank' class="fa fa-instagram nav-icon-style"></a>&nbsp&nbsp
-      <a href="https://www.youtube.com/"target='_blank' class="fa fa-youtube nav-icon-style"></a>&nbsp&nbsp
-      <a href="https://en.wikipedia.org/wiki/Wikipedia" target='_blank'class="fa fa-wikipedia-w nav-icon-style"></a>
-       <a class="navbar-brand foot1" href='{% url "help2"%}'>HELP</a>
-       <a class="navbar-brand foot2" href="{% url 'contact2'%}">CONTACT</a>
-   </nav>   
-  </div>
-</footer> 
+ {%include 'footer.html'%}
 {%endblock%}

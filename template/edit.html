@@ -15,20 +15,6 @@
 			width: 40%;
 			transform: translate(60%,-270px);
 		}
-		.nav-icon-style{
-     		font-size: 30px;
-     	 	text-decoration: none;
-     		 color:black;
-    	}
-    	.nav-icon-style:hover{
-     		 color: red;
-	     }	 
-		.foot1{
-      	    margin-left: 1000px;
-        }
-        .foot2{
-             margin-left: 50px;
-        }
         ol{
         	padding-left: 2%;
         }
@@ -40,21 +26,11 @@
 		<h1><u><b><i style="color:crimson;padding-left: 40%;">TITLE</i></b></u></h1>
 		<ol>
 		{%for s in data%}
-		<li>{{s.title}}&nbsp&nbsp<a style="margin-left: 10%;text-decoration: none;" href="{% url 'todoedit1' s.id%}">EDIT_TITLE</a></li>
+		<li>{{s.title}}<h6 style="background-color:none;color: yellow;">{{s.about}}</h6><a style="margin-left: 10%;text-decoration: none;" href="{% url 'todoedit1' s.id%}">EDIT_TITLE</a></li>
 		<hr>
 		{%endfor%}
 		</ol>
     </div>
 </body>
- <footer> 
-  <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
-      &nbsp&nbsp<a href="https://www.instagram.com/"target='_blank' class="fa fa-instagram nav-icon-style"></a>&nbsp&nbsp
-      <a href="https://www.youtube.com/"target='_blank' class="fa fa-youtube nav-icon-style"></a>&nbsp&nbsp
-      <a href="https://en.wikipedia.org/wiki/Wikipedia" target='_blank'class="fa fa-wikipedia-w nav-icon-style"></a>
-       <a class="navbar-brand foot1" href='{% url "help2"%}'>HELP</a>
-       <a class="navbar-brand foot2" href="{% url 'contact2'%}">CONTACT</a>
-   </nav>   
-  </div>
-</footer> 
+{%include 'footer.html'%}
 {%endblock%}

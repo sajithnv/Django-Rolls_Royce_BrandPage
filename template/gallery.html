@@ -1,23 +1,6 @@
 {%include 'main.html'%}
 <head>
 	<style type="text/css">
-	.foot1{
-      margin-left: 1000px;
-    }
-   /* .foot1:hover{
-      color: yellow;
-    }*/
-    .foot2{
-      margin-left: 50px;
-    }
-    .nav-icon-style{
-      font-size: 30px;
-      text-decoration: none;
-      color:black;
-    }
-    .nav-icon-style:hover{
-      color: red;
-    }
     .bg-img{
       opacity: 0.3;
       width: 100%;
@@ -66,17 +49,7 @@
   </div>
   <div>
     <h5 style="color: white; transform: translate(520px,-160px);">____New GHOST Introduction____</h5>
-    <a target='_blank'href="https://www.youtube.com/embed/41Gz8fpy9qk"><img class='video'src="https://blog.majestic.com/wp-content/uploads/2010/10/Video-Icon-crop.png" width="300" height="215"></img></a>
+    <a target='_blank'href="https://www.youtube.com/embed/41Gz8fpy9qk"><img class='video'src="https://blog.majestic.com/wp-content/uploads/2010/10/Video-Icon-crop.png" width="300" height="215" alt="Rolls_Royce Introduction____"></img></a>
   </div>
 </body>
- <footer> 
-  <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
-      &nbsp&nbsp<a href="https://www.instagram.com/"target='_blank' class="fa fa-instagram nav-icon-style"></a>&nbsp&nbsp
-      <a href="https://www.youtube.com/"target='_blank' class="fa fa-youtube nav-icon-style"></a>&nbsp&nbsp
-      <a href="https://en.wikipedia.org/wiki/Wikipedia" target='_blank'class="fa fa-wikipedia-w nav-icon-style"></a>
-       <a class="navbar-brand foot1" href='{% url "help2"%}'>HELP</a>
-       <a class="navbar-brand foot2" href="{% url 'contact2'%}">CONTACT</a>
-   </nav>   
-  </div>
-</footer> 
+ {%include 'footer.html'%}

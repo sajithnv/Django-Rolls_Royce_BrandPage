@@ -1,0 +1,34 @@
+{%block content%}
+<head>
+	<style type="text/css">
+	.nav-icon-style1{
+      text-decoration: none;
+      color:black;
+      margin-left: 20px;
+      font-size: 30px;
+    }
+    .nav-icon-style1:hover{
+      color: red;
+    }
+   .foot1{
+     transform: translate(1000px,0px);
+      /*margin-left: 1000px;*/
+    }
+    .foot2{
+    	transform: translate(1030px,0px);
+     /* margin-left: 50px;*/
+    }
+	</style>
+</head>
+<footer> 
+  <div class="icon-set">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+      <a href="https://www.instagram.com/"target='_blank' class="fa fa-instagram nav-icon-style1"></a>
+      <a href="https://www.youtube.com/"target='_blank' class="fa fa-youtube nav-icon-style1"></a>
+      <a href="https://en.wikipedia.org/wiki/Wikipedia" target='_blank'class="fa fa-wikipedia-w nav-icon-style1"></a>
+       <a class="navbar-brand foot1" href='{% url "help2"%}'>HELP</a>
+       <a class="navbar-brand foot2" href="{% url 'contact2'%}">CONTACT</a>
+   </nav>   
+  </div>
+</footer> 
+{%endblock%}

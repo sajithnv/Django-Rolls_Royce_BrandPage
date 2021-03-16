@@ -13,7 +13,7 @@ def todoadd(request):
     if t.is_valid():
         t.save()
         return redirect('view')
-    return render(request,'todoadd.html',{'form': t})
+    return render(request,'todoadd.html',{'form1': t})
 def view(request):
     content=Todo.objects.all()
     return render(request,'view.html',{'data':content})
@@ -28,7 +28,7 @@ def todoedit(request,pk):
     if t1.is_valid():
         t1.save()
         return redirect('view')
-    return render(request,'todoadd.html',{'form': t1})
+    return render(request,'todoadd.html',{'form1': t1})
 def newedit(request):
     content=Todo.objects.all()
     return render(request,'edit.html',{'data':content})
@@ -40,6 +40,6 @@ def tododelete(request,pk):
     if request.method=='POST':
         todoinstance.delete()
         return redirect('view')
-    return render(request,'tododelete.html',{'form': todoinstance})
+    return render(request,'tododelete.html',{'form1': todoinstance})
 def gallery(request):
     return render(request,'gallery.html')

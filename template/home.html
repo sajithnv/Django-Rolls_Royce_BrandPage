@@ -17,25 +17,6 @@
       background-color: black;
       border:10px solid gray;
     }
-    .foot1{
-      margin-left: 1000px;
-    }
-   /* .foot1:hover{
-      color: yellow;
-    }*/
-    .foot2{
-      margin-left: 50px;
-    }
-   /* .foot2:hover{
-      color: yellow;
-    }*/
-    .nav-icon-style1{
-      text-decoration: none;
-      color:black;
-    }
-    .nav-icon-style1:hover{
-      color: red;
-    }
     .card-div{
       height: 600px;
       padding: 1%;
@@ -95,7 +76,7 @@
       </div>
     </div>
   </div>
-<marquee onMouseOver='this.stop()' onMouseOut='this.start()' scrollamount='10' class='marquee'direction='up'>
+<marquee onMouseOver='this.stop()' onMouseOut='this.start()' scrollamount='8' class='marquee'direction='up'>
   <h1><u style="color: blue"><i style="color: crimson;">OUR MODELS</i></u></h1>
   <ul>
     <li><mark><a  target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Rolls-Royce_Ghost_%28MSP16%29.jpg/1200px-Rolls-Royce_Ghost_%28MSP16%29.jpg">2020 - Ghost</a></mark></li>
@@ -134,14 +115,4 @@
 </script>
 
 </body>
- <footer> 
-  <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
-      &nbsp&nbsp<a href="https://www.instagram.com/"target='_blank' class="fa fa-instagram nav-icon-style1"></a>&nbsp&nbsp
-      <a href="https://www.youtube.com/"target='_blank' class="fa fa-youtube nav-icon-style1"></a>&nbsp&nbsp
-      <a href="https://en.wikipedia.org/wiki/Wikipedia" target='_blank'class="fa fa-wikipedia-w nav-icon-style1"></a>
-       <a class="navbar-brand foot1" href='{% url "help2"%}'>HELP</a>
-       <a class="navbar-brand foot2" href="{% url 'contact2'%}">CONTACT</a>
-   </nav>   
-  </div>
-</footer> 
+ {%include 'footer.html'%}

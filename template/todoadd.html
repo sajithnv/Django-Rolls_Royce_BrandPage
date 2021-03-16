@@ -7,7 +7,7 @@
 			top:0;
 			width: 50%;
 			padding: 2%;
-			transform: translate(50%,-160%);
+			transform: translate(50%,-30%);
 			font-weight: bold;
 			color:white;
 			/*background-image:url("https://i0.wp.com/www.cars24.com/blog/wp-content/uploads/2019/10/phantom.jpg");
@@ -16,46 +16,26 @@
 		.bg-img{
 			opacity: 0.3;
 			width: 100%;
-			margin-bottom: -210px;
+			margin-bottom: -500px;
 		}
 		h1{
 			margin-bottom: 5%;
-			
-		}
-		.nav-icon-style{
-     		font-size: 30px;
-     	 	text-decoration: none;
-     		 color:black;
-    	}
-    	.nav-icon-style:hover{
-     		 color: red;
-	     }	 
-		.foot1{
-			margin-left: 1000px;
-		}
-		.foot2{
-			margin-left: 50px;
-		}
-	</style>
+	     }
+</style>
 </head>
 <body style="background-color:black;">
 	<img class="bg-img" src="https://wallpaperaccess.com/full/1893200.jpg">
 <form class='form1'method="post">
 	<h1 style="color: crimson;">___ADD_A_NEW_TITLE____</h1>
 	{%csrf_token%}
-	{{form.as_p}}
-	<input type="submit" value="save">
+<table style="text-align: center; margin-left: 70px;">
+	<tr><td></td><td>Title :</td></tr>
+	<tr><td></td><td>{{form1.title}}</td></tr>
+	<tr><td></td><td>About :</td></tr>
+	<tr><td></td><td>{{form1.about}}</td></tr>
+	</table>
+	<input style="margin-left: 200px;" type="submit" value="save">
 </form>
 
 </body>
- <footer> 
-  <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
-      &nbsp&nbsp<a href="https://www.instagram.com/"target='_blank' class="fa fa-instagram nav-icon-style"></a>&nbsp&nbsp
-      <a href="https://www.youtube.com/"target='_blank' class="fa fa-youtube nav-icon-style"></a>&nbsp&nbsp
-      <a href="https://en.wikipedia.org/wiki/Wikipedia" target='_blank'class="fa fa-wikipedia-w nav-icon-style"></a>
-       <a class="navbar-brand foot1" href='{% url "help2"%}'>HELP</a>
-       <a class="navbar-brand foot2" href="{% url 'contact2'%}">CONTACT</a>
-   </nav>   
-  </div>
-</footer> 
+ {%include 'footer.html'%}
