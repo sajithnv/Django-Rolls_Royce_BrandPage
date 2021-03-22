@@ -1,0 +1,8 @@
+{% include 'main.html' %}
+<h1>Log_in Form</h1>
+<form method="post">
+	{% csrf_token %}
+	{{ form.as_p }}
+    <input type="submit" value="Log_in">
+	<a href="{% url 'account12:signin' %}">New_Member_::Sign_up_Form</a>
+</form>

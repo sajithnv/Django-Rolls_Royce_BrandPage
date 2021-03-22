@@ -63,13 +63,13 @@
 </head>
 <body style="background-color: black;">
 	<img  class='image'src="https://wallpaperaccess.com/full/1893200.jpg">
-	<a href="{% url 'Edit1'%}"><button class="button">EDIT</button></a>
-	<a href="{% url 'delete1'%}"><button class="button1">DELETE</button></a>
+	<a href="{% url 'newapp12:Edit1'%}"><button class="button">EDIT</button></a>
+	<a href="{% url 'newapp12:delete1'%}"><button class="button1">DELETE</button></a>
 <table>
 	<thead><tr><th>Title</th><th>About</th></tr></thead>
 	<tbody>
 	{%for t in data%}
-	<tr><td style="color: white">{{t.title}}</td><td style="color: white">{{t.about}}</td><!-- <td><a href="{% url 'todoedit1' t.id %}"><button>Edit</button></a></td> --></tr>
+	<tr><td style="color: white">{{t.title}}</td><td style="color: white">{{t.about}}</td>
 	{%endfor%}
 	</tbody>
 </table>	

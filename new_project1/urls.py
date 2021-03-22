@@ -18,10 +18,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from django.conf.urls import url
-from newapp1.views import f2
+from newapp1.views import f2,gallery
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^',include('newapp1.urls')),#'newapp1'),namespace='newapp12')),
-    url(r'^$',f2,name='home'),
+    url(r'^',include(('newapp1.urls','newapp1'),namespace='newapp12')),
+    url(r'^',include(('account.urls','account'),namespace='account12')),
+    url(r'^$',f2,name='home1'),
+    url(r'^gallery/$',gallery,name='gallery1'),
 ]

@@ -1,4 +1,5 @@
 from django.shortcuts import render,redirect,get_object_or_404
+from django.contrib.auth.decorators import login_required
 from newapp1.models import Todo
 from newapp1.forms import TodoForm
 ##
@@ -8,12 +9,14 @@ def f2(request):
     return render(request,'home.html')
 ##def f2_1(request):
 ##    return render(request,'home.html')
+@login_required
 def todoadd(request):
     t=TodoForm(request.POST or None)
     if t.is_valid():
         t.save()
-        return redirect('view')
+        return redirect('newapp12:view')
     return render(request,'todoadd.html',{'form1': t})
+@login_required
 def view(request):
     content=Todo.objects.all()
     return render(request,'view.html',{'data':content})
@@ -27,7 +30,7 @@ def todoedit(request,pk):
     t1=TodoForm(request.POST or None,instance=todoinstance)
     if t1.is_valid():
         t1.save()
-        return redirect('view')
+        return redirect('newapp12:view')
     return render(request,'todoadd.html',{'form1': t1})
 def newedit(request):
     content=Todo.objects.all()
@@ -39,7 +42,7 @@ def tododelete(request,pk):
     todoinstance=get_object_or_404(Todo,pk=pk)
     if request.method=='POST':
         todoinstance.delete()
-        return redirect('view')
+        return redirect('newapp12:view')
     return render(request,'tododelete.html',{'form1': todoinstance})
 def gallery(request):
     return render(request,'gallery.html')

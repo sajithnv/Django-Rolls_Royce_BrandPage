@@ -26,7 +26,7 @@
 		<h1><u><b><i style="color:crimson;padding-left: 40%;">TITLE</i></b></u></h1>
 		<ol>
 		{%for s in data%}
-		<li>{{s.title}}<h6 style="background-color:none;color: yellow;">{{s.about}}</h6><a style="margin-left: 10%;text-decoration: none;" href="{% url 'todoedit1' s.id%}">EDIT_TITLE</a></li>
+		<li>{{s.title}}<h6 style="background-color:none;color: yellow;">{{s.about}}</h6><a style="margin-left: 10%;text-decoration: none;" href="{% url 'newapp12:todoedit1' s.id%}">EDIT_TITLE</a></li>
 		<hr>
 		{%endfor%}
 		</ol>

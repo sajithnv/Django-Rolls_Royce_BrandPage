@@ -1,0 +1,7 @@
+{% include 'main.html' %}
+<h1>Sign_up Form</h1>
+<form method="post">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<input type="submit" value="Sign_up">
+</form>

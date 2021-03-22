@@ -26,7 +26,7 @@
 		<h1><u><b><i style="color:crimson;padding-left: 40%;">TITLE</i></b></u></h1>
 		<ol>
 		{%for s in data%}
-		<li>{{s.title}}&nbsp&nbsp<a style="margin-left: 10%;text-decoration: none;" href="{% url 'tododelete1' s.id%}">DELETE_TITLE</a></li>
+		<li>{{s.title}}&nbsp&nbsp<a style="margin-left: 10%;text-decoration: none;" href="{% url 'newapp12:tododelete1' s.id%}">DELETE_TITLE</a></li>
 		<hr>
 		{%endfor%}
 		</ol>
