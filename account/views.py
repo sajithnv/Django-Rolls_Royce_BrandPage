@@ -8,7 +8,7 @@ def sign_in(request):
 	if sign_up_form.is_valid():
 		sign_up_form.save()
 		u=sign_up_form.cleaned_data.get('username')
-		p=sign_up_form.cleaned_data.get('password')
+		p=sign_up_form.cleaned_data.get('password1')
 		user=authenticate(username=u,password=p)
 		login(request, user)
 		return redirect('home1')

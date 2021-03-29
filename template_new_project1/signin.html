@@ -1,7 +1,46 @@
 {% include 'main.html' %}
-<h1>Sign_up Form</h1>
-<form method="post">
-	{% csrf_token %}
-	{{ form.as_p }}
-	<input type="submit" value="Sign_up">
-</form>
+<head>
+	<style type="text/css">
+		.signup{
+			transform: translate(0px,-30px);
+			border:1px dashed white;
+			text-align: center;
+			width: 70%;
+			padding: 3%;
+			margin-left: 15%;
+			margin-top: 0.5%;
+		}.signup-body{
+			background-color: black;
+		}
+		.bg-img-signup{
+			 margin-bottom:-700px;
+			 opacity: 0.2;
+     		 width: 100%;
+		}
+		hr{
+			color: pink;
+		}
+		.signup-form{
+			color:gold;
+		}
+		a{
+			text-decoration: none;
+		}
+
+	</style>
+</head>
+<body class="signup-body">
+		  <img class="bg-img-signup" src="https://wallpaperaccess.com/full/1893200.jpg">
+	<div class="signup">
+		<h1 style="color: crimson">Sign_up Form</h1><hr><hr><br>
+		<form method="post" class="signup-form">
+			<div style="text-align: left">
+				{% csrf_token %}
+				{{ form.as_p }}
+		    </div>
+			<br><hr>
+			<input type="submit" value="Sign_up"><br><br>
+			<a href="{% url 'account12:login' %}">- Already_a_MEMBER :: Log_in -</a>
+		</form>
+	</div>
+</body>
